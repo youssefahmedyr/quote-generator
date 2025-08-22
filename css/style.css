@@ -43,17 +43,19 @@ position: absolute;
     padding: 40px;
     border-radius: 20px;
     font-family: Arial, sans-serif;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
 }
 .glass-box h1 {
     font-family: "Lora", serif;
     font-size: 25px;
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(20px);
-    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.059);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
 }
 .glass-box .quotes-box {
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.059);
+    backdrop-filter: blur(10px);
     border-radius: 20px;
     height: 400px;
     font-size: 25px;
@@ -72,7 +74,7 @@ position: absolute;
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(20px);
     width: 50%;
-    border-radius: 12px;
+    border-radius: 17px;
 }
 @keyframes float1 {
     0% {
