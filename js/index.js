@@ -1,14 +1,14 @@
 var quotes = [
   {
     quote: "Be yourself; everyone else is already taken.",
-    author: "Oscar Wilde",
+    author: "Alan Kay",
     likes: 17540,
     image: "images/2.jpg",
   },
   {
     quote:
       "I'm selfish, impatient and a little insecure. I make mistakes... But if you can't handle me at my worst, then you sure as hell don't deserve me at my best.",
-    author: "Marilyn Monroe",
+    author: "Ralph Waldo Emerson",
     likes: 15000,
     image: "images/3.jpg",
   },
@@ -21,34 +21,34 @@ var quotes = [
   {
     quote:
       "Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.",
-    author: "Albert Einstein",
+    author: "Stephen King",
     likes: 20000,
     image: "images/5.jpg",
   },
   {
     quote: "A room without books is like a body without a soul.",
-    author: "Marcus Tullius Cicero",
+    author: "Frank Zappa",
     likes: 10000,
     image: "images/6.jpg",
   },
   {
     quote:
       "Be who you are and say what you feel, because those who mind don't matter, and those who matter don't mind.",
-    author: "Bernard M. Baruch",
+    author: "William James",
     likes: 2000,
     image: "images/7.jpg",
   },
   {
     quote:
       "You've gotta dance like there's nobody watching, Love like you'll never be hurt...",
-    author: "William W. Purkey",
+    author: "Buddha",
     likes: 500,
     image: "images/8.jpg",
   },
   {
     quote:
       "You know you're in love when you can't fall asleep because reality is finally better than your dreams.",
-    author: "Dr. Seuss",
+    author: "Dalai Lama",
     likes: 100000,
     image: "images/9.jpg",
   },
@@ -79,7 +79,7 @@ function change() {
                 <div class="quotes-box overflow-hidden d-flex justify-content-center align-items-center imgs d-flex align-items-center gap-3 px-2">
                     <img class="rounded-circle border border-2 border-light" width="60" height="60" 
                         src="${quotes[randomNum].image}" alt="Author Image">
-                    <h2 class="name h5 m-0">Oscar Wilde</h2>
+                    <h2 class="name h5 m-0">${quotes[randomNum].author}</h2>
                 </div>
             </div>
             <div class="inner col-md-6">
