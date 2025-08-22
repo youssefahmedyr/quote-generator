@@ -1,0 +1,120 @@
+body {
+background: linear-gradient(to left, #070f2b, #2e073f);
+}
+.shape {
+opacity: 0.4;
+position: absolute;
+}
+.circle {
+    width: 300px;
+    height:300px ;
+    border-radius: 50%;
+    background: radial-gradient(circle at top left, #ebd3f8, #ff7eb3);
+}
+.circle.circle-1 {
+    top: 20%;
+    left: 10%;
+    animation: float1 22s infinite ease-in-out;
+}
+.circle.circle-2 {
+    top: 40%;
+    left: 70%;
+    animation: float3 28s infinite ease-in-out;
+}
+.square {
+    width: 220px;
+    height: 220px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #6a11cb, #ebd3f8);
+}
+.square.square-1 {
+    top: 60%;
+    left: 30%;
+    animation: float2 26s infinite ease-in-out;
+}
+.square.square-2 {
+    top: 15%;
+    left: 80%;
+    animation: float4 30s infinite ease-in-out;
+}
+.glass-box {
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    border-radius: 20px;
+    font-family: Arial, sans-serif;
+}
+.glass-box h1 {
+    font-family: "Lora", serif;
+    font-size: 25px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    border-radius: 14px;
+}
+.glass-box .quotes-box {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    height: 400px;
+    font-size: 25px;
+    overflow-y: auto;
+    overflow-x: hidden ;
+    font-family: "Roboto", sans-serif;
+}
+.glass-box .quotes-box.imgs , .glass-box .quotes-box.likes {
+    height: 70px;
+}
+.glass-box .quotes-box.imgs img {
+    width: 60px;
+    height: 60px;
+}
+.btns .badge {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    width: 50%;
+    border-radius: 12px;
+}
+@keyframes float1 {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    50% {
+        transform: translate(80px, -60px) rotate(90deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(180deg);
+    }
+}
+@keyframes float2 {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    50% {
+        transform: translate(-100px, 70px) rotate(-120deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(-240deg);
+    }
+}
+@keyframes float3 {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    50% {
+        transform: translate(50px, 100px) rotate(60deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(120deg);
+    }
+}
+@keyframes float4 {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    50% {
+        transform: translate(-70px, -100px) rotate(180deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(360deg);
+    }
+}

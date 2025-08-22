@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quote Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body class="vh-100 overflow-hidden text-white d-flex justify-content-center align-items-center">
+    <div class="background position-absolute w-100 h-100 overflow-hidden z-0">
+        <div class="shape position-absolute circle circle-1"></div>
+        <div class="shape position-absolute square square-1"></div>
+        <div class="shape position-absolute circle circle-2"></div>
+        <div class="shape position-absolute square square-2"></div>
+    </div>
+    <div class="glass-box position-relative z-1 text-center text-white d-flex justify-content-center flex-column" id="glassBox">
+        <h1 class="fw-bolder p-2">Quote of the Day</h1>
+        <div class="quotes-box d-flex justify-content-center align-items-center p-2">
+            <p id="demo">Be yourself; everyone else is already taken.</p>
+        </div>
+        <div class="py-2 row g-2">
+            <div class="inner col-md-6">
+                <div class="quotes-box overflow-hidden imgs d-flex justify-content-center align-items-center gap-3 px-2">
+                    <img class="rounded-circle border border-2 border-light" 
+                        src="images/1.jpg" alt="Author Image">
+                    <h2 class="name h5 m-0">Oscar Wilde</h2>
+                </div>
+            </div>
+            <div class="inner col-md-6">
+                <div class="quotes-box overflow-hidden likes d-flex align-items-center justify-content-center align-items-center gap-2 p-2">
+                    <i class="fa-solid fa-heart text-danger"></i>
+                    <span>17540</span>
+                </div>
+            </div>
+        </div>
+        <div class="btns row gx-2">
+            <div class="inner col-md-6">
+                <button class="badge w-100 p-3 fs-6 border-0" onclick="copyQuote()">Copy Quote</button>
+            </div>
+            <div class="inner col-md-6 mt-2 m-md-0">
+                <button class="badge w-100 p-3 fs-6 border-0" onclick="change()">Next Quote</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
