@@ -45,6 +45,7 @@ position: absolute;
     font-family: Arial, sans-serif;
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(20px);
+    box-shadow: rgba(0, 0, 0, 0.175) 0px 4px 30px;
 }
 .glass-box h1 {
     font-family: "Lora", serif;
@@ -56,6 +57,7 @@ position: absolute;
 .glass-box .quotes-box {
     background: rgba(255, 255, 255, 0.059);
     backdrop-filter: blur(10px);
+    box-shadow: rgba(0, 0, 0, 0.175) 0px 4px 30px;
     border-radius: 20px;
     height: 400px;
     font-size: 25px;
